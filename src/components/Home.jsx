@@ -152,7 +152,7 @@ const HomePage = () => {
       description_en: "Solutions to efficiently charge electric vehicles.",
       icon: <EvStationIcon sx={{ fontSize: 60, color: primaryColor }} />,
       link: "/Docs",
-      image: "public/img/recarga-de-coches-electricos.jpeg",
+      image: "/img/recarga-de-coches-electricos.jpeg",
       group: "Recarga_de_coches_electricos",
       sector: "",
       searchtext: "",
