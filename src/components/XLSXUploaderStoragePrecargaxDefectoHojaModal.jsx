@@ -104,7 +104,7 @@ const ExcelUploaderStorage = ({ openx, cerrarModalx, handleRecalculate }) => {
             const file = event.target.files[0];
 
             if (!file || !file.name.toLowerCase().includes(ep.cod.toLowerCase())) {
-                toast.error(`El archivo debe ser 'DocTec_${ep.cod}_******** '.`);
+                toast.error(`El archivo debe ser 'WB_${ep.cod}_******** '.`);
                 document.body.removeChild(fileInput);
                 return;
             }
@@ -128,7 +128,7 @@ const ExcelUploaderStorage = ({ openx, cerrarModalx, handleRecalculate }) => {
         });
 
         const ep = JSON.parse(sessionStorage.getItem('selectedFicha') || 'null');
-        const fileName = `DocTec_${ep.cod}_${formattedDate}.xlsx`;
+        const fileName = `WB_${ep.cod}_${formattedDate}.xlsx`;
         XLSX.writeFile(wb, fileName);
     };
 
@@ -193,7 +193,7 @@ const ExcelUploaderStorage = ({ openx, cerrarModalx, handleRecalculate }) => {
                         }
                     
                         if (!file.name.toLowerCase().includes(ep.cod.toLowerCase())) {
-                            toast.error(`El archivo debe ser 'DocTec_${ep.cod}_******** '.`);
+                            toast.error(`El archivo debe ser 'WB_${ep.cod}_******** '.`);
                             return;
                         }
                     
