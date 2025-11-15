@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watt Bucket - Almacenamiento de Energía con Baterías de Litio Industrial, Doméstico, Agrario y Comercial</title>
-    <meta name="description" content="Watt Bucket - Especialistas en almacenamiento de energía con baterías de litio para uso industrial, doméstico, agrario y comercial. Soluciones eficientes y sostenibles.">
-    <meta name="keywords" content="watt bucket, baterías litio, almacenamiento energía, energía industrial, energía doméstica, energía agraria, energía comercial, litio, baterías solares, autoconsumo, energía renovable">
+    <title>Watt Bucket - Almacenamiento de Energía con Baterías de Litio Industrial, Doméstico, Agrario y Comercial
+    </title>
+    <meta name="description"
+        content="Watt Bucket - Especialistas en almacenamiento de energía con baterías de litio para uso industrial, doméstico, agrario y comercial. Soluciones eficientes y sostenibles.">
+    <meta name="keywords"
+        content="watt bucket, baterías litio, almacenamiento energía, energía industrial, energía doméstica, energía agraria, energía comercial, litio, baterías solares, autoconsumo, energía renovable">
     <meta name="author" content="Watt Bucket">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="Watt Bucket - Almacenamiento de Energía con Baterías de Litio">
-    <meta property="og:description" content="Especialistas en baterías de litio para almacenamiento energético industrial, doméstico, agrario y comercial">
+    <meta property="og:description"
+        content="Especialistas en baterías de litio para almacenamiento energético industrial, doméstico, agrario y comercial">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.wattbucket.com">
-    
+
     <!-- Schema.org markup for Google -->
     <script type="application/ld+json">
     {
@@ -78,7 +82,6 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23000000' d='M19 12h3L12 3 2 12h3v8h2v-2h10v2h2v-8zM7.21 10h9.58l.21.19V12H7v-1.81l.21-.19zm7.36-2H9.43L12 5.69 14.57 8zM7 16v-2h10v2H7z'/></svg>">    
     <style>
         :root {
             --primary: #1a365d;
@@ -197,8 +200,8 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.5)), 
-            url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.5)),
+                url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -626,9 +629,11 @@
             0% {
                 box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
             }
+
             70% {
                 box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
             }
+
             100% {
                 box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
             }
@@ -793,11 +798,11 @@
             border-radius: 50%;
         }
 
-        input:checked + .cookie-slider {
+        input:checked+.cookie-slider {
             background-color: var(--success);
         }
 
-        input:checked + .cookie-slider:before {
+        input:checked+.cookie-slider:before {
             transform: translateX(26px);
         }
 
@@ -896,6 +901,7 @@
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -1056,6 +1062,39 @@
             }
         }
     </style>
+
+    <script>
+        window.web = "Watt Bucket";
+        var initials = web.match(/[A-Z]/g)?.join("").slice(0, 2) || "VA";
+        generateFavicon(initials);
+        document.title = web + " - Instalaciones Eléctricas Integrales"; // Asignar dinámicamente el título
+
+        // Función para generar el favicon
+        function generateFavicon(initials) {
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+
+            canvas.width = 64;
+            canvas.height = 64;
+
+            // Fondo negro
+            context.fillStyle = "black";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Texto en color blanco sobre el fondo negro
+            context.font = "bold 40px sans-serif";
+            context.textAlign = "center";
+            context.textBaseline = "middle";
+            context.fillStyle = "white";
+            context.fillText(initials, canvas.width / 2, canvas.height / 2);
+
+            // Crear el favicon
+            var link = document.createElement('link');
+            link.rel = 'icon';
+            link.href = canvas.toDataURL('image/png');
+            document.head.appendChild(link);
+        }
+    </script>
 </head>
 
 <body>
@@ -1084,7 +1123,8 @@
     <section class="hero" id="inicio">
         <div class="container">
             <h1>Almacenamiento de Energía con Baterías de Litio</h1>
-            <p>Soluciones avanzadas de almacenamiento energético con baterías de litio para uso industrial, doméstico, agrario y comercial. Maximiza tu autonomía energética y ahorra en costes.</p>
+            <p>Soluciones avanzadas de almacenamiento energético con baterías de litio para uso industrial, doméstico,
+                agrario y comercial. Maximiza tu autonomía energética y ahorra en costes.</p>
             <a href="#contacto" class="btn">Solicitar Estudio Gratuito</a>
             <a href="#soluciones" class="btn btn-secondary">Ver Soluciones</a>
         </div>
@@ -1098,17 +1138,20 @@
                 <div class="feature-card">
                     <i class="material-icons feature-icon">battery_std</i>
                     <h3>Alta Densidad Energética</h3>
-                    <p>Baterías de litio con máxima capacidad de almacenamiento en mínimo espacio, ideales para cualquier aplicación.</p>
+                    <p>Baterías de litio con máxima capacidad de almacenamiento en mínimo espacio, ideales para
+                        cualquier aplicación.</p>
                 </div>
                 <div class="feature-card">
                     <i class="material-icons feature-icon">update</i>
                     <h3>Ciclos Largos de Vida</h3>
-                    <p>Hasta 6000 ciclos de carga/descarga con mínima degradación, garantizando larga durabilidad y rentabilidad.</p>
+                    <p>Hasta 6000 ciclos de carga/descarga con mínima degradación, garantizando larga durabilidad y
+                        rentabilidad.</p>
                 </div>
                 <div class="feature-card">
                     <i class="material-icons feature-icon">security</i>
                     <h3>Seguridad Total</h3>
-                    <p>Sistemas con protección integrada contra sobrecarga, cortocircuitos y temperaturas extremas. Certificaciones internacionales.</p>
+                    <p>Sistemas con protección integrada contra sobrecarga, cortocircuitos y temperaturas extremas.
+                        Certificaciones internacionales.</p>
                 </div>
             </div>
         </div>
@@ -1126,7 +1169,8 @@
                     <div class="product-content">
                         <h3>Baterías Litio Industrial</h3>
                         <p>
-                            Sistemas de alta capacidad para fábricas, naves industriales y grandes consumidores. Reducción de costes energéticos y backup de emergencia.
+                            Sistemas de alta capacidad para fábricas, naves industriales y grandes consumidores.
+                            Reducción de costes energéticos y backup de emergencia.
                         </p>
                         <a href="#contacto" class="btn">Más Información</a>
                     </div>
@@ -1138,7 +1182,8 @@
                     <div class="product-content">
                         <h3>Baterías Litio Doméstico</h3>
                         <p>
-                            Soluciones residenciales para maximizar el autoconsumo solar, reducir facturas eléctricas y garantizar suministro durante cortes.
+                            Soluciones residenciales para maximizar el autoconsumo solar, reducir facturas eléctricas y
+                            garantizar suministro durante cortes.
                         </p>
                         <a href="#contacto" class="btn">Más Información</a>
                     </div>
@@ -1150,7 +1195,8 @@
                     <div class="product-content">
                         <h3>Baterías Litio Agrario</h3>
                         <p>
-                            Sistemas específicos para explotaciones agrícolas y ganaderas: bombeo solar, electrificación rural y maquinaria eléctrica.
+                            Sistemas específicos para explotaciones agrícolas y ganaderas: bombeo solar, electrificación
+                            rural y maquinaria eléctrica.
                         </p>
                         <a href="#contacto" class="btn">Más Información</a>
                     </div>
@@ -1166,18 +1212,23 @@
             <div class="seo-grid">
                 <div class="seo-card">
                     <h3>Baterías de Litio Industrial</h3>
-                    <p>Soluciones de almacenamiento energético de alta capacidad para el sector industrial. Reduzca su factura eléctrica aprovechando las horas valle, garantice el suministro crítico y contribuya a la sostenibilidad de su empresa.</p>
+                    <p>Soluciones de almacenamiento energético de alta capacidad para el sector industrial. Reduzca su
+                        factura eléctrica aprovechando las horas valle, garantice el suministro crítico y contribuya a
+                        la sostenibilidad de su empresa.</p>
                 </div>
                 <div class="seo-card">
                     <h3>Almacenamiento Doméstico</h3>
-                    <p>Maximice su autoconsumo solar con baterías de litio para viviendas. Almacene el exceso de energía producida durante el día para utilizarla por la noche, reduzca su dependencia de la red y ahorre en su factura eléctrica.</p>
+                    <p>Maximice su autoconsumo solar con baterías de litio para viviendas. Almacene el exceso de energía
+                        producida durante el día para utilizarla por la noche, reduzca su dependencia de la red y ahorre
+                        en su factura eléctrica.</p>
                 </div>
                 <div class="seo-card">
                     <h3>Soluciones Agrarias</h3>
-                    <p>Sistemas específicos para el sector agrícola y ganadero: bombeo solar, electrificación de naves, cercados eléctricos y maquinaria. Energía fiable en zonas rurales con o sin conexión a red.</p>
+                    <p>Sistemas específicos para el sector agrícola y ganadero: bombeo solar, electrificación de naves,
+                        cercados eléctricos y maquinaria. Energía fiable en zonas rurales con o sin conexión a red.</p>
                 </div>
             </div>
-            
+
             <div class="seo-keywords">
                 <h3>Watt Bucket - Líder en Almacenamiento Energético</h3>
                 <div class="keyword-list">
@@ -1203,7 +1254,8 @@
         <div class="container">
             <div class="brochure-content">
                 <h2 class="section-title">Descarga Nuestro Catálogo de Soluciones</h2>
-                <p>Obtén información detallada sobre nuestros sistemas de baterías de litio, especificaciones técnicas, casos de éxito y opciones de financiación.</p>
+                <p>Obtén información detallada sobre nuestros sistemas de baterías de litio, especificaciones técnicas,
+                    casos de éxito y opciones de financiación.</p>
                 <button id="open-brochure-modal" class="btn">Descargar Catálogo Gratuito</button>
             </div>
         </div>
@@ -1217,7 +1269,8 @@
                 <div class="benefit-item">
                     <i class="material-icons benefit-icon">savings</i>
                     <h3>Máximo Ahorro</h3>
-                    <p>Reduce hasta el 80% de tu factura eléctrica almacenando energía solar o aprovechando tarifas horarias.</p>
+                    <p>Reduce hasta el 80% de tu factura eléctrica almacenando energía solar o aprovechando tarifas
+                        horarias.</p>
                 </div>
                 <div class="benefit-item">
                     <i class="material-icons benefit-icon">eco</i>
@@ -1227,7 +1280,8 @@
                 <div class="benefit-item">
                     <i class="material-icons benefit-icon">verified</i>
                     <h3>Independencia Energética</h3>
-                    <p>Reduce tu dependencia de la red eléctrica y garantiza suministro durante cortes o incidencias.</p>
+                    <p>Reduce tu dependencia de la red eléctrica y garantiza suministro durante cortes o incidencias.
+                    </p>
                 </div>
                 <div class="benefit-item">
                     <i class="material-icons benefit-icon">trending_up</i>
@@ -1246,22 +1300,26 @@
                 <div class="process-step">
                     <div class="step-number">1</div>
                     <h3>Análisis Energético</h3>
-                    <p>Estudiamos tu consumo, necesidades y objetivos para diseñar la solución óptima de almacenamiento.</p>
+                    <p>Estudiamos tu consumo, necesidades y objetivos para diseñar la solución óptima de almacenamiento.
+                    </p>
                 </div>
                 <div class="process-step">
                     <div class="step-number">2</div>
                     <h3>Diseño Personalizado</h3>
-                    <p>Desarrollamos el proyecto técnico adaptado a tus necesidades específicas y espacio disponible.</p>
+                    <p>Desarrollamos el proyecto técnico adaptado a tus necesidades específicas y espacio disponible.
+                    </p>
                 </div>
                 <div class="process-step">
                     <div class="step-number">3</div>
                     <h3>Instalación Profesional</h3>
-                    <p>Nuestro equipo certificado instala el sistema con máxima precisión y cumpliendo todos los estándares.</p>
+                    <p>Nuestro equipo certificado instala el sistema con máxima precisión y cumpliendo todos los
+                        estándares.</p>
                 </div>
                 <div class="process-step">
                     <div class="step-number">4</div>
                     <h3>Puesta en Marcha</h3>
-                    <p>Activamos el sistema, realizamos pruebas y te formamos en el uso y monitorización de tu instalación.</p>
+                    <p>Activamos el sistema, realizamos pruebas y te formamos en el uso y monitorización de tu
+                        instalación.</p>
                 </div>
             </div>
         </div>
@@ -1306,12 +1364,14 @@
                     <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Nombre completo</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre" required>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre"
+                                required>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Tu email" required>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Tu email"
+                                required>
                         </div>
 
                         <div class="form-group">
@@ -1352,7 +1412,8 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Watt Bucket</h3>
-                    <p>Especialistas en almacenamiento de energía con baterías de litio para uso industrial, doméstico, agrario y comercial. Soluciones eficientes y sostenibles.</p>
+                    <p>Especialistas en almacenamiento de energía con baterías de litio para uso industrial, doméstico,
+                        agrario y comercial. Soluciones eficientes y sostenibles.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -1391,13 +1452,15 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Watt Bucket - Especialistas en Almacenamiento de Energía con Baterías de Litio. Todos los derechos reservados.</p>
+                <p>&copy; 2023 Watt Bucket - Especialistas en Almacenamiento de Energía con Baterías de Litio. Todos los
+                    derechos reservados.</p>
             </div>
         </div>
     </footer>
 
     <!-- NEW: WhatsApp Button -->
-    <a href="https://wa.me/600366211?text=Hola,%20me%20interesan%20las%20baterías%20de%20litio%20de%20Watt%20Bucket" class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/600366211?text=Hola,%20me%20interesan%20las%20baterías%20de%20litio%20de%20Watt%20Bucket"
+        class="whatsapp-button" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -1405,8 +1468,10 @@
     <div class="cookie-banner" id="cookie-banner">
         <div class="cookie-content">
             <div class="cookie-text">
-                <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación.</p>
-                <p>Puede obtener más información en nuestra <a href="#" id="cookie-policy-link">Política de Cookies</a>.</p>
+                <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad
+                    relacionada con sus preferencias mediante el análisis de sus hábitos de navegación.</p>
+                <p>Puede obtener más información en nuestra <a href="#" id="cookie-policy-link">Política de Cookies</a>.
+                </p>
             </div>
             <div class="cookie-buttons">
                 <button class="cookie-btn cookie-accept" id="accept-cookies">Aceptar</button>
@@ -1420,15 +1485,18 @@
         <div class="modal-content">
             <span class="close-modal" id="close-modal">&times;</span>
             <h3>Descarga Nuestro Catálogo</h3>
-            <p>Introduce tus datos para descargar nuestro catálogo completo de soluciones de almacenamiento con baterías de litio.</p>
+            <p>Introduce tus datos para descargar nuestro catálogo completo de soluciones de almacenamiento con baterías
+                de litio.</p>
             <form id="brochure-form">
                 <div class="form-group">
                     <label for="brochure-name">Nombre completo</label>
-                    <input type="text" id="brochure-name" name="name" class="form-control" placeholder="Tu nombre" required>
+                    <input type="text" id="brochure-name" name="name" class="form-control" placeholder="Tu nombre"
+                        required>
                 </div>
                 <div class="form-group">
                     <label for="brochure-email">Email</label>
-                    <input type="email" id="brochure-email" name="email" class="form-control" placeholder="Tu email" required>
+                    <input type="email" id="brochure-email" name="email" class="form-control" placeholder="Tu email"
+                        required>
                 </div>
                 <div class="form-group">
                     <label for="brochure-phone">Teléfono</label>
@@ -1444,8 +1512,9 @@
         <div class="cookie-settings-content">
             <span class="close-modal" id="close-cookie-settings">&times;</span>
             <h3>Configuración de Cookies</h3>
-            <p>Puede gestionar sus preferencias de cookies aquí. Las cookies necesarias son esenciales para el funcionamiento del sitio y no se pueden desactivar.</p>
-            
+            <p>Puede gestionar sus preferencias de cookies aquí. Las cookies necesarias son esenciales para el
+                funcionamiento del sitio y no se pueden desactivar.</p>
+
             <div class="cookie-category">
                 <div class="cookie-category-header">
                     <h4>Cookies Necesarias</h4>
@@ -1454,7 +1523,8 @@
                         <span class="cookie-slider"></span>
                     </label>
                 </div>
-                <p>Estas cookies son esenciales para el funcionamiento básico del sitio web y no se pueden desactivar. Incluyen funciones de seguridad y accesibilidad.</p>
+                <p>Estas cookies son esenciales para el funcionamiento básico del sitio web y no se pueden desactivar.
+                    Incluyen funciones de seguridad y accesibilidad.</p>
             </div>
 
             <div class="cookie-category">
@@ -1465,7 +1535,8 @@
                         <span class="cookie-slider"></span>
                     </label>
                 </div>
-                <p>Estas cookies nos permiten contar visitas y fuentes de tráfico para medir y mejorar el rendimiento de nuestro sitio.</p>
+                <p>Estas cookies nos permiten contar visitas y fuentes de tráfico para medir y mejorar el rendimiento de
+                    nuestro sitio.</p>
             </div>
 
             <div class="cookie-category">
@@ -1476,7 +1547,8 @@
                         <span class="cookie-slider"></span>
                     </label>
                 </div>
-                <p>Permiten ofrecer una experiencia más personalizada, recordando sus preferencias y configuraciones.</p>
+                <p>Permiten ofrecer una experiencia más personalizada, recordando sus preferencias y configuraciones.
+                </p>
             </div>
 
             <div class="cookie-category">
@@ -1487,7 +1559,8 @@
                         <span class="cookie-slider"></span>
                     </label>
                 </div>
-                <p>Estas cookies pueden ser establecidas a través de nuestro sitio por nuestros socios publicitarios para crear un perfil de sus intereses.</p>
+                <p>Estas cookies pueden ser establecidas a través de nuestro sitio por nuestros socios publicitarios
+                    para crear un perfil de sus intereses.</p>
             </div>
 
             <div class="cookie-settings-buttons">
@@ -1562,33 +1635,33 @@
         const brochureForm = document.getElementById('brochure-form');
 
         // Open modal
-        openModalBtn.addEventListener('click', function() {
+        openModalBtn.addEventListener('click', function () {
             modal.style.display = 'flex';
         });
 
         // Close modal
-        closeModalBtn.addEventListener('click', function() {
+        closeModalBtn.addEventListener('click', function () {
             modal.style.display = 'none';
         });
 
         // Close modal when clicking outside
-        window.addEventListener('click', function(event) {
+        window.addEventListener('click', function (event) {
             if (event.target === modal) {
                 modal.style.display = 'none';
             }
         });
 
         // Handle brochure form submission
-        brochureForm.addEventListener('submit', function(e) {
+        brochureForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Simulate download
             alert('¡Gracias! Tu catálogo lo hemos enviado a tu email.');
-            
+
             // Reset form and close modal
             brochureForm.reset();
             modal.style.display = 'none';
-            
+
             // Here you would typically send the form data to your server
             // and trigger the actual download
         });
@@ -1605,7 +1678,7 @@
         // Load saved cookie preferences
         function loadCookiePreferences() {
             const preferences = JSON.parse(localStorage.getItem('cookiePreferences') || '{}');
-            
+
             document.getElementById('performance-cookies').checked = preferences.performance !== false;
             document.getElementById('functionality-cookies').checked = preferences.functionality !== false;
             document.getElementById('advertising-cookies').checked = preferences.advertising === true;
@@ -1618,10 +1691,10 @@
                 functionality: document.getElementById('functionality-cookies').checked,
                 advertising: document.getElementById('advertising-cookies').checked
             };
-            
+
             localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
             localStorage.setItem('cookiesAccepted', 'true');
-            
+
             // Apply cookie settings (in a real implementation, you would set actual cookies here)
             applyCookieSettings(preferences);
         }
@@ -1640,53 +1713,53 @@
         }
 
         // Accept all cookies
-        acceptCookiesBtn.addEventListener('click', function() {
+        acceptCookiesBtn.addEventListener('click', function () {
             const preferences = {
                 performance: true,
                 functionality: true,
                 advertising: true
             };
-            
+
             localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
             localStorage.setItem('cookiesAccepted', 'true');
             cookieBanner.style.display = 'none';
-            
+
             applyCookieSettings(preferences);
         });
 
         // Open cookie settings modal
-        cookieSettingsBtn.addEventListener('click', function() {
+        cookieSettingsBtn.addEventListener('click', function () {
             loadCookiePreferences();
             cookieSettingsModal.style.display = 'flex';
         });
 
         // Close cookie settings modal
-        closeCookieSettings.addEventListener('click', function() {
+        closeCookieSettings.addEventListener('click', function () {
             cookieSettingsModal.style.display = 'none';
         });
 
-        cancelCookieSettings.addEventListener('click', function() {
+        cancelCookieSettings.addEventListener('click', function () {
             cookieSettingsModal.style.display = 'none';
         });
 
         // Save cookie settings
-        saveCookieSettings.addEventListener('click', function() {
+        saveCookieSettings.addEventListener('click', function () {
             saveCookiePreferences();
             cookieSettingsModal.style.display = 'none';
             cookieBanner.style.display = 'none';
-            
+
             alert('Sus preferencias de cookies han sido guardadas correctamente.');
         });
 
         // Close modal when clicking outside
-        window.addEventListener('click', function(event) {
+        window.addEventListener('click', function (event) {
             if (event.target === cookieSettingsModal) {
                 cookieSettingsModal.style.display = 'none';
             }
         });
 
         // Load preferences on page load
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const preferences = JSON.parse(localStorage.getItem('cookiePreferences') || '{}');
             applyCookieSettings(preferences);
         });
